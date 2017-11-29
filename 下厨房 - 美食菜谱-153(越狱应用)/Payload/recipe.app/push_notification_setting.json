@@ -1,0 +1,72 @@
+[
+  {
+    "section" : "关注",
+    "items"    : [
+      {
+        "key" : "follow_push",
+        "desc" : "有人关注我",
+        "default" : true
+      },
+      {
+        "key" : "friends_push",
+        "desc" : "我的好友加入下厨房",
+        "default" : true
+      }
+    ]
+  },
+  {
+    "section" : "赞",
+    "items"    : [
+      {
+        "key" : "digg_push",
+        "desc" : "有人称赞我",
+        "default" : true
+      }
+    ]
+  },
+  {
+    "section" : "内容",
+    "items"    : [
+      {
+        "key" : "dish_push",
+        "desc" : "我的作品",
+        "default" : true
+      },
+      {
+        "key" : "recipe_push",
+        "desc" : "我的菜谱",
+        "default" : true
+      },
+      {
+        "key" : "salon_push",
+        "desc" : "我的讨论",
+        "default" : true
+      }
+    ]
+  },
+  {
+    "section" : "信箱",
+    "items"    : [
+      {
+        "key" : "im_push",
+        "desc" : "有人发给我新的消息",
+        "default" : true
+      }
+    ]
+  },
+  {
+    "section" : "厨房推送",
+    "items"    : [
+      {
+        "key" : "rec_push",
+        "desc" : "你可能感兴趣的内容",
+        "default" : true
+      },
+      {
+        "key" : "promo_push",
+        "desc" : "促销及折扣消息",
+        "default" : true
+      }
+    ]
+  }
+]

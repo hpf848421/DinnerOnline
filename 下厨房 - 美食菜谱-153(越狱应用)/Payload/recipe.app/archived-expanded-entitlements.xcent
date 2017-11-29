@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:www.xiachufang.com</string>
+		<string>applinks:xiachufang.com</string>
+		<string>applinks:m.xiachufang.com</string>
+		<string>applinks:jumpapp.xiachufang.com</string>
+	</array>
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>merchant.xiachufang</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.xiachufang.recipe</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>BV897Y9BD9.com.xiachufang.recipe</string>
+	</array>
+</dict>
+</plist>
