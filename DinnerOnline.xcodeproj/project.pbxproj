@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0E1799F21FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799F01FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.swift */; };
 		0E1799F31FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1799F11FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.xib */; };
+		0E1799F61FCF90DF0040374D /* HPMainAdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799F41FCF90DF0040374D /* HPMainAdTableViewCell.swift */; };
+		0E1799F71FCF90DF0040374D /* HPMainAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */; };
+		0E1799F91FCF9B220040374D /* AdArrowDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */; };
+		0E1799FB1FCFA5CE0040374D /* HPMainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */; };
 		0E2303EA1FC7CCC3008E1BAC /* Pop_recipe_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2303E91FC7CCC3008E1BAC /* Pop_recipe_View.swift */; };
 		0E2303EC1FC7CCD1008E1BAC /* Pop_recipe_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2303EB1FC7CCD1008E1BAC /* Pop_recipe_View.xib */; };
 		0E27C29A1FC668C0002EC87A /* HPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2991FC668C0002EC87A /* HPNavigationBar.swift */; };
@@ -89,6 +93,10 @@
 		03D3F19E243A28FC2D26FCA1 /* Pods_DinnerOnlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinnerOnlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1799F01FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainRecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E1799F11FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainRecommendCollectionViewCell.xib; sourceTree = "<group>"; };
+		0E1799F41FCF90DF0040374D /* HPMainAdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainAdTableViewCell.swift; sourceTree = "<group>"; };
+		0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainAdTableViewCell.xib; sourceTree = "<group>"; };
+		0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdArrowDownButton.swift; sourceTree = "<group>"; };
+		0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainSearchViewController.swift; sourceTree = "<group>"; };
 		0E2303E91FC7CCC3008E1BAC /* Pop_recipe_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop_recipe_View.swift; sourceTree = "<group>"; };
 		0E2303EB1FC7CCD1008E1BAC /* Pop_recipe_View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pop_recipe_View.xib; sourceTree = "<group>"; };
 		0E27C2991FC668C0002EC87A /* HPNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPNavigationBar.swift; sourceTree = "<group>"; };
@@ -256,6 +264,9 @@
 				0EB933CA1FCD5141002EF4FB /* HPMainCollectionViewCell.xib */,
 				0E1799F01FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.swift */,
 				0E1799F11FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.xib */,
+				0E1799F41FCF90DF0040374D /* HPMainAdTableViewCell.swift */,
+				0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */,
+				0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -487,6 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				0E9F96981FC6632200B01F10 /* ChuFangViewController.swift */,
+				0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -744,6 +756,7 @@
 				0E7E5DB01FC56E18000F9083 /* Assets.xcassets in Resources */,
 				0EB933C81FCD1293002EF4FB /* HPBannerTableViewCell.xib in Resources */,
 				0EF0E1861FCBF3C600146921 /* Info.plist in Resources */,
+				0E1799F71FCF90DF0040374D /* HPMainAdTableViewCell.xib in Resources */,
 				0E2303EC1FC7CCD1008E1BAC /* Pop_recipe_View.xib in Resources */,
 				0EB933CC1FCD5141002EF4FB /* HPMainCollectionViewCell.xib in Resources */,
 				0EF0E1601FCBEB0400146921 /* HPMainBannerCell.xib in Resources */,
@@ -829,6 +842,7 @@
 				0E27C2A01FC6740B002EC87A /* HPTitleBarView.swift in Sources */,
 				0EF0E1941FCBF3C600146921 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0EB933CB1FCD5141002EF4FB /* HPMainCollectionViewCell.swift in Sources */,
+				0E1799FB1FCFA5CE0040374D /* HPMainSearchViewController.swift in Sources */,
 				0EF0E15F1FCBEB0400146921 /* HPMainBannerCell.swift in Sources */,
 				0EB933BE1FCCEA39002EF4FB /* HPMainTitleBarTableViewCell.swift in Sources */,
 				0E27C29E1FC66D16002EC87A /* Common.swift in Sources */,
@@ -838,6 +852,7 @@
 				0EF0E15B1FCBE8E800146921 /* TYCyclePagerView.m in Sources */,
 				0EB933C31FCCF5CC002EF4FB /* HPPop_eventTableViewCell.swift in Sources */,
 				0E27C29A1FC668C0002EC87A /* HPNavigationBar.swift in Sources */,
+				0E1799F91FCF9B220040374D /* AdArrowDownButton.swift in Sources */,
 				0EF0E18F1FCBF3C600146921 /* SDWebImagePrefetcher.m in Sources */,
 				0EB933C71FCD1293002EF4FB /* HPBannerTableViewCell.swift in Sources */,
 				0EF0E1951FCBF3C600146921 /* UIImageView+WebCache.m in Sources */,
@@ -848,6 +863,7 @@
 				0EF0E1931FCBF3C600146921 /* UIImage+WebP.m in Sources */,
 				0EF0E1881FCBF3C600146921 /* NSData+ImageContentType.m in Sources */,
 				0E3E735A1FCC114A00145693 /* HPMainTableViewCell.swift in Sources */,
+				0E1799F61FCF90DF0040374D /* HPMainAdTableViewCell.swift in Sources */,
 				0EF0E18A1FCBF3C600146921 /* SDWebImageCompat.m in Sources */,
 				0E2303EA1FC7CCC3008E1BAC /* Pop_recipe_View.swift in Sources */,
 				0EF0E15C1FCBE8E800146921 /* TYPageControl.m in Sources */,

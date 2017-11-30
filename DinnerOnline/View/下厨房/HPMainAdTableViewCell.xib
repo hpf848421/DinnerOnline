@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HPMainAdTableViewCellId" rowHeight="275" id="KGk-i7-Jjw" customClass="HPMainAdTableViewCell" customModule="DinnerOnline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="274.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-ZJ-kxn">
+                        <rect key="frame" x="10" y="10" width="490" height="224"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9G-lM-yGJ">
+                        <rect key="frame" x="10" y="239" width="250" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="uUP-lm-eul"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opV-nh-iT0" customClass="AdArrowDownButton" customModule="DinnerOnline" customModuleProvider="target">
+                        <rect key="frame" x="440" y="244" width="60" height="20.5"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Pj3-7T-ebJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="adBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wxk-tU-fmk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VF3-ZJ-kxn" secondAttribute="trailing" constant="10" id="0Ty-bK-858"/>
+                    <constraint firstItem="VF3-ZJ-kxn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4Xt-ZL-D9X"/>
+                    <constraint firstItem="x9G-lM-yGJ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="5" id="5xq-vW-ai4"/>
+                    <constraint firstAttribute="bottom" secondItem="VF3-ZJ-kxn" secondAttribute="bottom" constant="40" id="Ahg-hk-1gV"/>
+                    <constraint firstAttribute="bottom" secondItem="opV-nh-iT0" secondAttribute="bottom" constant="10" id="G8D-Yh-uPI"/>
+                    <constraint firstItem="x9G-lM-yGJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LhJ-0Q-i9F"/>
+                    <constraint firstItem="VF3-ZJ-kxn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MfA-3h-5aV"/>
+                    <constraint firstItem="opV-nh-iT0" firstAttribute="top" secondItem="VF3-ZJ-kxn" secondAttribute="bottom" constant="10" id="ikG-pP-Lxi"/>
+                    <constraint firstAttribute="trailing" secondItem="opV-nh-iT0" secondAttribute="trailing" constant="10" id="kDP-71-Egf"/>
+                    <constraint firstItem="x9G-lM-yGJ" firstAttribute="top" secondItem="VF3-ZJ-kxn" secondAttribute="bottom" constant="5" id="nL1-Lr-4SU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adButton" destination="opV-nh-iT0" id="geb-ks-B7t"/>
+                <outlet property="adimageView" destination="VF3-ZJ-kxn" id="Bow-dz-0Lz"/>
+                <outlet property="imageView" destination="VF3-ZJ-kxn" id="hJO-1q-4m2"/>
+                <outlet property="titleLabel" destination="x9G-lM-yGJ" id="5c8-u3-iUe"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="-63.5"/>
+        </tableViewCell>
+    </objects>
+</document>

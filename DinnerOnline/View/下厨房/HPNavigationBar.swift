@@ -7,8 +7,12 @@
 //
 
 import UIKit
-
+protocol HPNavigationBarDelegate : NSObjectProtocol {
+    func searchBarClick(with bar : HPNavigationBar,and searchBar:UISearchBar)
+}
 class HPNavigationBar: UINavigationBar {
+    
+    var delegate1: HPNavigationBarDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,7 +22,7 @@ class HPNavigationBar: UINavigationBar {
         createButton.setImage(UIImage(named: "creatrecipeicon_22x22_"), for: UIControlState.normal)
         
         let searchBar = UITextField(frame:  CGRect(x: createButton.frame.maxX+10, y: 5, width: UIScreen.kWidth()-44.0*2, height: 34))
-        
+        searchBar.addTarget(self, action: #selector(searchBarClick), for: UIControlEvents.editingDidBegin)
         
 //        let searchBar=UISearchBar(frame: CGRect(x: createButton.frame.maxX+10, y: 5, width: UIScreen.kWidth()-44.0*2, height: 34))
         addSubview(searchBar)
@@ -32,4 +36,12 @@ class HPNavigationBar: UINavigationBar {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+}
+extension HPNavigationBar{
+    
+    @objc func searchBarClick(_ searchBar:UISearchBar){
+        delegate1?.searchBarClick(with: self, and: searchBar)
+    }
+    
+    
 }

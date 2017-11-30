@@ -13,6 +13,8 @@ class ChuFangViewController: UIViewController {
     var HPMainTableViewCellId:String = "HPMainTableViewCell"
     var HPPop_eventTableViewCellId:String = "HPPop_eventTableViewCellId"
     var HPBannerTableViewCellId:String = "HPBannerTableViewCellId"
+    var HPMainAdTableViewCellId:String = "HPMainAdTableViewCellId"
+    
     var pop_event_Count : Int = 0
     lazy var hpMainViewModel = HPMainViewModel()
     
@@ -20,10 +22,6 @@ class ChuFangViewController: UIViewController {
     
     lazy var titleBar = HPTitleBarView(frame: CGRect(x: 0, y: 0, width: UIScreen.kWidth(), height: 80))
     
-//    var pop_recipe_view = UINib(nibName: "Pop_recipe_View", bundle: nil).instantiate(withOwner: self, options: [:])[0] as! Pop_recipe_View
-    
-
-  
     lazy var tableView : HPMainTableView = {
         let table = HPMainTableView()
         table.allowsSelection=false
@@ -38,14 +36,6 @@ class ChuFangViewController: UIViewController {
         
         addTableView()
         
-//        pop_recipe_view.frame=CGRect(x: 0, y: 80, width: UIScreen.kWidth(), height: 150)
-//
-//        addPagerView()
-//        addPageControl()
-        
-       
-       
-        
         loaddatas()
     }
 
@@ -55,6 +45,7 @@ class ChuFangViewController: UIViewController {
 // MARK: - UI
 extension ChuFangViewController{
     func setNavigationBar(){
+        self.navigationBar1.delegate1=self
         view.addSubview(navigationBar1)
     }
 
@@ -64,6 +55,7 @@ extension ChuFangViewController{
         tableView.register(UINib(nibName: "HPMainTitleBarTableViewCell", bundle: nil), forCellReuseIdentifier: HPMainTitleBarTableViewCellId)
         tableView.register(UINib(nibName: "HPPop_eventTableViewCell", bundle: nil), forCellReuseIdentifier: HPPop_eventTableViewCellId)
         tableView.register(UINib(nibName: "HPBannerTableViewCell", bundle: nil), forCellReuseIdentifier: HPBannerTableViewCellId)
+        tableView.register(UINib(nibName: "HPMainAdTableViewCell", bundle: nil), forCellReuseIdentifier: HPMainAdTableViewCellId)
         tableView.frame=CGRect(x: 0, y: self.navigationBar1.frame.maxY, width: UIScreen.kWidth(), height: UIScreen.kHeight()-self.navigationBar1.frame.maxY)
         tableView.separatorStyle=UITableViewCellSeparatorStyle.none
         view.addSubview(tableView)
@@ -107,6 +99,12 @@ extension ChuFangViewController : UITableViewDelegate,UITableViewDataSource{
              cell1.pageControl.frame = CGRect(x: 0, y: cell1.pagerView.frame.height - 26.0, width: cell1.pagerView.frame.size.width, height: 26)
             return cell1
         }
+        //广告
+        if indexPath.row == 1+(hpMainViewModel.explore_tabsArray?.count ?? 0)  {
+            let cell1=tableView.dequeueReusableCell(withIdentifier: HPMainAdTableViewCellId) as! HPMainAdTableViewCell
+            cell1.celldatas=hpMainViewModel.explore_tabsArray?[indexPath.row-2] as? NSDictionary
+            return cell1
+        }
         let cell1=tableView.dequeueReusableCell(withIdentifier: HPMainTableViewCellId) as! HPMainTableViewCell
         cell1.explore_tabsDic=hpMainViewModel.explore_tabsArray?[indexPath.row-2] as? NSDictionary
         return cell1
@@ -131,6 +129,18 @@ extension ChuFangViewController : UITableViewDelegate,UITableViewDataSource{
                 return 320
             }
         }
+        
+         if indexPath.row == 1+(hpMainViewModel.explore_tabsArray?.count ?? 0)  {
+        
+            return 280
+        }
         return 370
     }
+}
+extension ChuFangViewController:HPNavigationBarDelegate{
+    func searchBarClick(with bar: HPNavigationBar, and searchBar: UISearchBar) {
+        self.present(HPMainSearchViewController(), animated: false, completion: nil)
+    }
+    
+    
 }
