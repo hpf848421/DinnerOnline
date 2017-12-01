@@ -13,6 +13,7 @@
 		0E1799F71FCF90DF0040374D /* HPMainAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */; };
 		0E1799F91FCF9B220040374D /* AdArrowDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */; };
 		0E1799FB1FCFA5CE0040374D /* HPMainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */; };
+		0E1799FD1FCFB4A80040374D /* UIColor(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1799FC1FCFB4A80040374D /* UIColor(extension).swift */; };
 		0E2303EA1FC7CCC3008E1BAC /* Pop_recipe_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2303E91FC7CCC3008E1BAC /* Pop_recipe_View.swift */; };
 		0E2303EC1FC7CCD1008E1BAC /* Pop_recipe_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2303EB1FC7CCD1008E1BAC /* Pop_recipe_View.xib */; };
 		0E27C29A1FC668C0002EC87A /* HPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2991FC668C0002EC87A /* HPNavigationBar.swift */; };
@@ -22,6 +23,8 @@
 		0E27C2A21FC6756C002EC87A /* HPTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2A11FC6756C002EC87A /* HPTitleButton.swift */; };
 		0E27C2A41FC67896002EC87A /* HPNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2A31FC67896002EC87A /* HPNetWorking.swift */; };
 		0E27C2A61FC67D68002EC87A /* HPMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2A51FC67D68002EC87A /* HPMainViewModel.swift */; };
+		0E2888541FD155B000A83FFB /* HPCreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */; };
+		0E2888561FD1569400A83FFB /* HPCreateRecipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */; };
 		0E3E73571FCC0EFB00145693 /* HPMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E73561FCC0EFB00145693 /* HPMainTableView.swift */; };
 		0E3E735A1FCC114A00145693 /* HPMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E73581FCC114A00145693 /* HPMainTableViewCell.swift */; };
 		0E3E735B1FCC114A00145693 /* HPMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E73591FCC114A00145693 /* HPMainTableViewCell.xib */; };
@@ -42,6 +45,13 @@
 		0EB933C81FCD1293002EF4FB /* HPBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB933C61FCD1293002EF4FB /* HPBannerTableViewCell.xib */; };
 		0EB933CB1FCD5141002EF4FB /* HPMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB933C91FCD5141002EF4FB /* HPMainCollectionViewCell.swift */; };
 		0EB933CC1FCD5141002EF4FB /* HPMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB933CA1FCD5141002EF4FB /* HPMainCollectionViewCell.xib */; };
+		0ED369841FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED369821FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift */; };
+		0ED369851FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED369831FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.xib */; };
+		0ED369871FD0F5BC001B5173 /* HPCollectionViewLeftFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED369861FD0F5BC001B5173 /* HPCollectionViewLeftFlowLayout.swift */; };
+		0ED3698A1FD129D9001B5173 /* HPHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED369881FD129D9001B5173 /* HPHeaderCollectionReusableView.swift */; };
+		0ED3698B1FD129D9001B5173 /* HPHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED369891FD129D9001B5173 /* HPHeaderCollectionReusableView.xib */; };
+		0ED3698E1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3698C1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift */; };
+		0ED3698F1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED3698D1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib */; };
 		0EE029801FC6A1C300E4B48B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE029811FC6A1C300E4B48B /* AFNetworking.framework */; };
 		0EE029821FC6A1C600E4B48B /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE029831FC6A1C600E4B48B /* YYModel.framework */; };
 		0EE029851FC6A26200E4B48B /* HPNavTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE029841FC6A26200E4B48B /* HPNavTitleModel.swift */; };
@@ -97,6 +107,7 @@
 		0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainAdTableViewCell.xib; sourceTree = "<group>"; };
 		0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdArrowDownButton.swift; sourceTree = "<group>"; };
 		0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainSearchViewController.swift; sourceTree = "<group>"; };
+		0E1799FC1FCFB4A80040374D /* UIColor(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor(extension).swift"; sourceTree = "<group>"; };
 		0E2303E91FC7CCC3008E1BAC /* Pop_recipe_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop_recipe_View.swift; sourceTree = "<group>"; };
 		0E2303EB1FC7CCD1008E1BAC /* Pop_recipe_View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pop_recipe_View.xib; sourceTree = "<group>"; };
 		0E27C2991FC668C0002EC87A /* HPNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPNavigationBar.swift; sourceTree = "<group>"; };
@@ -106,6 +117,8 @@
 		0E27C2A11FC6756C002EC87A /* HPTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTitleButton.swift; sourceTree = "<group>"; };
 		0E27C2A31FC67896002EC87A /* HPNetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPNetWorking.swift; sourceTree = "<group>"; };
 		0E27C2A51FC67D68002EC87A /* HPMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainViewModel.swift; sourceTree = "<group>"; };
+		0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCreateRecipeView.swift; sourceTree = "<group>"; };
+		0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPCreateRecipeView.xib; sourceTree = "<group>"; };
 		0E3E73561FCC0EFB00145693 /* HPMainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableView.swift; sourceTree = "<group>"; };
 		0E3E73581FCC114A00145693 /* HPMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableViewCell.swift; sourceTree = "<group>"; };
 		0E3E73591FCC114A00145693 /* HPMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainTableViewCell.xib; sourceTree = "<group>"; };
@@ -134,6 +147,13 @@
 		0EB933C61FCD1293002EF4FB /* HPBannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPBannerTableViewCell.xib; sourceTree = "<group>"; };
 		0EB933C91FCD5141002EF4FB /* HPMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EB933CA1FCD5141002EF4FB /* HPMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		0ED369821FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPSearchItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ED369831FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPSearchItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		0ED369861FD0F5BC001B5173 /* HPCollectionViewLeftFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCollectionViewLeftFlowLayout.swift; sourceTree = "<group>"; };
+		0ED369881FD129D9001B5173 /* HPHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		0ED369891FD129D9001B5173 /* HPHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		0ED3698C1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainCreateRecipeViewController.swift; sourceTree = "<group>"; };
+		0ED3698D1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainCreateRecipeViewController.xib; sourceTree = "<group>"; };
 		0EE029811FC6A1C300E4B48B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE029831FC6A1C600E4B48B /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE029841FC6A26200E4B48B /* HPNavTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPNavTitleModel.swift; sourceTree = "<group>"; };
@@ -267,6 +287,13 @@
 				0E1799F41FCF90DF0040374D /* HPMainAdTableViewCell.swift */,
 				0E1799F51FCF90DF0040374D /* HPMainAdTableViewCell.xib */,
 				0E1799F81FCF9B220040374D /* AdArrowDownButton.swift */,
+				0ED369821FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift */,
+				0ED369831FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.xib */,
+				0ED369861FD0F5BC001B5173 /* HPCollectionViewLeftFlowLayout.swift */,
+				0ED369881FD129D9001B5173 /* HPHeaderCollectionReusableView.swift */,
+				0ED369891FD129D9001B5173 /* HPHeaderCollectionReusableView.xib */,
+				0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */,
+				0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -478,6 +505,7 @@
 				0E9F968E1FC65A7400B01F10 /* Utils */,
 				0E27C29B1FC66AF1002EC87A /* UIScreen(addtion).swift */,
 				0E27C29D1FC66D16002EC87A /* Common.swift */,
+				0E1799FC1FCFB4A80040374D /* UIColor(extension).swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -499,6 +527,8 @@
 			children = (
 				0E9F96981FC6632200B01F10 /* ChuFangViewController.swift */,
 				0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */,
+				0ED3698C1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift */,
+				0ED3698D1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -753,15 +783,19 @@
 			files = (
 				0EF0E1A41FCBF3E600146921 /* README in Resources */,
 				0EB933C41FCCF5CC002EF4FB /* HPPop_eventTableViewCell.xib in Resources */,
+				0E2888561FD1569400A83FFB /* HPCreateRecipeView.xib in Resources */,
 				0E7E5DB01FC56E18000F9083 /* Assets.xcassets in Resources */,
 				0EB933C81FCD1293002EF4FB /* HPBannerTableViewCell.xib in Resources */,
 				0EF0E1861FCBF3C600146921 /* Info.plist in Resources */,
+				0ED369851FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.xib in Resources */,
 				0E1799F71FCF90DF0040374D /* HPMainAdTableViewCell.xib in Resources */,
 				0E2303EC1FC7CCD1008E1BAC /* Pop_recipe_View.xib in Resources */,
 				0EB933CC1FCD5141002EF4FB /* HPMainCollectionViewCell.xib in Resources */,
 				0EF0E1601FCBEB0400146921 /* HPMainBannerCell.xib in Resources */,
 				0E1799F31FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.xib in Resources */,
+				0ED3698B1FD129D9001B5173 /* HPHeaderCollectionReusableView.xib in Resources */,
 				0E3E735B1FCC114A00145693 /* HPMainTableViewCell.xib in Resources */,
+				0ED3698F1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib in Resources */,
 				0E7E5DAE1FC56E18000F9083 /* Main.storyboard in Resources */,
 				0EB933C01FCCEA61002EF4FB /* HPMainTitleBarTableViewCell.xib in Resources */,
 			);
@@ -839,6 +873,7 @@
 				0EF0E1961FCBF3C600146921 /* UIView+WebCacheOperation.m in Sources */,
 				0EE029851FC6A26200E4B48B /* HPNavTitleModel.swift in Sources */,
 				0E3E73571FCC0EFB00145693 /* HPMainTableView.swift in Sources */,
+				0ED369841FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift in Sources */,
 				0E27C2A01FC6740B002EC87A /* HPTitleBarView.swift in Sources */,
 				0EF0E1941FCBF3C600146921 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0EB933CB1FCD5141002EF4FB /* HPMainCollectionViewCell.swift in Sources */,
@@ -851,15 +886,19 @@
 				0EF0E18B1FCBF3C600146921 /* SDWebImageDecoder.m in Sources */,
 				0EF0E15B1FCBE8E800146921 /* TYCyclePagerView.m in Sources */,
 				0EB933C31FCCF5CC002EF4FB /* HPPop_eventTableViewCell.swift in Sources */,
+				0E2888541FD155B000A83FFB /* HPCreateRecipeView.swift in Sources */,
+				0ED369871FD0F5BC001B5173 /* HPCollectionViewLeftFlowLayout.swift in Sources */,
 				0E27C29A1FC668C0002EC87A /* HPNavigationBar.swift in Sources */,
 				0E1799F91FCF9B220040374D /* AdArrowDownButton.swift in Sources */,
 				0EF0E18F1FCBF3C600146921 /* SDWebImagePrefetcher.m in Sources */,
+				0ED3698E1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift in Sources */,
 				0EB933C71FCD1293002EF4FB /* HPBannerTableViewCell.swift in Sources */,
 				0EF0E1951FCBF3C600146921 /* UIImageView+WebCache.m in Sources */,
 				0E27C2A41FC67896002EC87A /* HPNetWorking.swift in Sources */,
 				0E27C2A61FC67D68002EC87A /* HPMainViewModel.swift in Sources */,
 				0E9F96901FC6619300B01F10 /* BaseTabBarController.swift in Sources */,
 				0EF0E1911FCBF3C600146921 /* UIImage+GIF.m in Sources */,
+				0ED3698A1FD129D9001B5173 /* HPHeaderCollectionReusableView.swift in Sources */,
 				0EF0E1931FCBF3C600146921 /* UIImage+WebP.m in Sources */,
 				0EF0E1881FCBF3C600146921 /* NSData+ImageContentType.m in Sources */,
 				0E3E735A1FCC114A00145693 /* HPMainTableViewCell.swift in Sources */,
@@ -879,6 +918,7 @@
 				0EF0E18D1FCBF3C600146921 /* SDWebImageDownloaderOperation.m in Sources */,
 				0E27C2A21FC6756C002EC87A /* HPTitleButton.swift in Sources */,
 				0EF0E15A1FCBE8E800146921 /* TYCyclePagerTransformLayout.m in Sources */,
+				0E1799FD1FCFB4A80040374D /* UIColor(extension).swift in Sources */,
 				0E9F96991FC6632200B01F10 /* ChuFangViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

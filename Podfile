@@ -5,6 +5,7 @@ target 'DinnerOnline' do
  
   pod 'AFNetworking', '~>3.1.0'
 pod 'YYModel'
+pod 'pop', '~> 1.0'
 #pod 'SDWebImage', '~> 3.8.0'
 #pod 'SDWebImage/WebP'
 #pod 'Kingfisher'
