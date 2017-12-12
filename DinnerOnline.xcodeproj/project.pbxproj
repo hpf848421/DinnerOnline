@@ -117,7 +117,7 @@
 		0E27C2A11FC6756C002EC87A /* HPTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTitleButton.swift; sourceTree = "<group>"; };
 		0E27C2A31FC67896002EC87A /* HPNetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPNetWorking.swift; sourceTree = "<group>"; };
 		0E27C2A51FC67D68002EC87A /* HPMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainViewModel.swift; sourceTree = "<group>"; };
-		0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCreateRecipeView.swift; sourceTree = "<group>"; };
+		0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCreateRecipeView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPCreateRecipeView.xib; sourceTree = "<group>"; };
 		0E3E73561FCC0EFB00145693 /* HPMainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableView.swift; sourceTree = "<group>"; };
 		0E3E73581FCC114A00145693 /* HPMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableViewCell.swift; sourceTree = "<group>"; };

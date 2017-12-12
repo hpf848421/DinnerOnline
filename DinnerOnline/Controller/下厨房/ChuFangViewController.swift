@@ -142,7 +142,7 @@ extension ChuFangViewController:HPNavigationBarDelegate{
         self.present(HPMainSearchViewController(), animated: false, completion: nil)
     }
     func addButtonClick(with Button: UIButton) {
-        let createRecipeView=HPCreateRecipeView(frame: CGRect(x: 0, y: 0, width: UIScreen.kWidth(), height: UIScreen.kHeight()))
+        let createRecipeView=HPCreateRecipeView.loadRecipeView()
        view.window?.addSubview(createRecipeView)
     }
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +25,7 @@
                     </constraints>
                     <state key="normal" title="Button" image="creatrecipeicon_22x22_"/>
                     <connections>
-                        <action selector="closeButtonClick:" destination="D1P-2b-k1o" eventType="touchUpInside" id="0uv-Zx-SjE"/>
+                        <action selector="closeButtonClick:" destination="D1P-2b-k1o" eventType="touchUpInside" id="i6g-YI-2NM"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享的人是厨房里的天使" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70m-ds-TMp">
@@ -39,7 +39,7 @@
                 </label>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyJ-eP-Aer" userLabel="View1">
                     <rect key="frame" x="0.0" y="388.5" width="58.5" height="80"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="ZA9-hE-uyB"/>
                     </constraints>
@@ -54,7 +54,7 @@
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pm-xM-WFZ" userLabel="View3">
                     <rect key="frame" x="158.5" y="388.5" width="58" height="80"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjw-QK-iej" userLabel="View4">
                     <rect key="frame" x="216.5" y="328.5" width="100" height="200"/>
@@ -65,7 +65,7 @@
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNX-Yr-ywl" userLabel="View5">
                     <rect key="frame" x="316.5" y="388.5" width="58.5" height="80"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuZ-ag-HP2">
                     <rect key="frame" x="58.5" y="538.5" width="100" height="50"/>
@@ -203,7 +203,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="a2m-Za-iWm"/>
             <connections>
-                <outlet property="closeButton" destination="d7w-RS-hi3" id="HM7-Xo-VQp"/>
+                <outlet property="closeButton" destination="d7w-RS-hi3" id="kPt-De-WVx"/>
+                <outlet property="leftAnimationView" destination="0el-md-Zlf" id="U4b-3j-8L1"/>
+                <outlet property="rightAnimationView" destination="Pjw-QK-iej" id="QqN-kx-Z4I"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
