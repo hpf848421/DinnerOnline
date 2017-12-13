@@ -35,11 +35,10 @@ class ChuFangViewController: UIViewController {
         setNavigationBar()
         
         addTableView()
-        
+   
         loaddatas()
     }
-
-
+  
 }
 
 // MARK: - UI
