@@ -137,12 +137,16 @@ extension ChuFangViewController : UITableViewDelegate,UITableViewDataSource{
     }
 }
 extension ChuFangViewController:HPNavigationBarDelegate{
-    func searchBarClick(with bar: HPNavigationBar, and searchBar: UISearchBar) {
-        self.present(HPMainSearchViewController(), animated: false, completion: nil)
+    func searchBarClick(with bar: HPNavigationBar, and searchBar: UIButton) {
+         self.present(HPMainSearchViewController(), animated: false, completion: nil)
     }
     func addButtonClick(with Button: UIButton) {
         let createRecipeView=HPCreateRecipeView.loadRecipeView()
        view.window?.addSubview(createRecipeView)
     }
-    
+    func buyListClick(with Button: UIButton) {
+        let buyListVC = HPBuyListViewController()
+        navigationController?.pushViewController(buyListVC, animated: true)
+        
+    }
 }

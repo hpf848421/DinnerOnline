@@ -12,11 +12,17 @@ class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
       navigationBar.isHidden=true
+        
     }
 
-
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+//        tabBarController.hidesBottomBarWhenPushed=true
+        viewController.hidesBottomBarWhenPushed=true
+//        tabBarController?.hidesBottomBarWhenPushed=true
+        super.pushViewController(viewController, animated: animated)
+        
+    }
 
 
 }

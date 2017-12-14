@@ -31,7 +31,7 @@ class HPMainSearchViewController: UIViewController {
         cancelButton.addTarget(self, action: #selector(cancelButtonClick), for: UIControlEvents.touchUpInside)
 //        cancelButton.setTitleColor(UIColor(displayP3Red: 252/255.0, green: 98/255.0, blue: 86/255.0, alpha: 1), for: UIControlState.normal)
         cancelButton.setTitleColor(UIColor(displayHelperWithRed: 252, green: 98, blue: 86, alpha: 1), for: UIControlState.normal)
-        
+        searchBar.becomeFirstResponder()
         let layout = HPCollectionViewLeftFlowLayout()
         layout.scrollDirection=UICollectionViewScrollDirection.vertical
         layout.headerReferenceSize = CGSize(width: UIScreen.kWidth(), height: 40)
