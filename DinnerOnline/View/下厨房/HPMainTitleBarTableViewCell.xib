@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,18 +25,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-7a-ON8" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="179" height="241"/>
                                 <state key="normal" title="Button" image="feedsNotLogin_320x240_"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="SbC-Dj-BYf" eventType="touchUpInside" id="ChP-i8-fDT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1K-mH-hRn" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1K-mH-hRn" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
                                 <rect key="frame" x="194" y="0.0" width="178.5" height="241"/>
                                 <state key="normal" title="Button" image="feedsNotLogin_320x240_"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="SbC-Dj-BYf" eventType="touchUpInside" id="2fO-sS-GT3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yB-xD-p8K" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yB-xD-p8K" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
                                 <rect key="frame" x="387.5" y="0.0" width="179" height="241"/>
                                 <state key="normal" title="Button" image="feedsNotLogin_320x240_"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="SbC-Dj-BYf" eventType="touchUpInside" id="f0W-VM-KEY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2g-rd-U9E" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2g-rd-U9E" customClass="HPTitleButton" customModule="DinnerOnline" customModuleProvider="target">
                                 <rect key="frame" x="581.5" y="0.0" width="178.5" height="241"/>
                                 <state key="normal" title="Button" image="feedsNotLogin_320x240_"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="SbC-Dj-BYf" eventType="touchUpInside" id="aEr-Zs-bJm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

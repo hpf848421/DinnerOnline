@@ -26,6 +26,8 @@
 		0E27C2A61FC67D68002EC87A /* HPMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27C2A51FC67D68002EC87A /* HPMainViewModel.swift */; };
 		0E2888541FD155B000A83FFB /* HPCreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */; };
 		0E2888561FD1569400A83FFB /* HPCreateRecipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */; };
+		0E3639061FE3A8E500994E5A /* PopTitleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3639051FE3A8E500994E5A /* PopTitleBaseViewController.swift */; };
+		0E3639081FE3A9CF00994E5A /* HPMainBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3639071FE3A9CF00994E5A /* HPMainBaseTableViewController.swift */; };
 		0E3E73571FCC0EFB00145693 /* HPMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E73561FCC0EFB00145693 /* HPMainTableView.swift */; };
 		0E3E735A1FCC114A00145693 /* HPMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E73581FCC114A00145693 /* HPMainTableViewCell.swift */; };
 		0E3E735B1FCC114A00145693 /* HPMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E73591FCC114A00145693 /* HPMainTableViewCell.xib */; };
@@ -35,13 +37,18 @@
 		0E7E5DB01FC56E18000F9083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7E5DAF1FC56E18000F9083 /* Assets.xcassets */; };
 		0E7E5DBE1FC56E18000F9083 /* DinnerOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E5DBD1FC56E18000F9083 /* DinnerOnlineTests.swift */; };
 		0E7E5DC91FC56E18000F9083 /* DinnerOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E5DC81FC56E18000F9083 /* DinnerOnlineUITests.swift */; };
+		0E847D791FE3C363002FEF1D /* CircleIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E847D781FE3C363002FEF1D /* CircleIconView.swift */; };
 		0E8797521FE26CCC0082831B /* HPBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8797501FE26CCB0082831B /* HPBuyListViewController.swift */; };
 		0E8797531FE26CCC0082831B /* HPBuyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8797511FE26CCC0082831B /* HPBuyListViewController.xib */; };
 		0E8797551FE26FEC0082831B /* HPTitleNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8797541FE26FEC0082831B /* HPTitleNavigationBar.swift */; };
+		0E912AA81FF338B2005DA4F2 /* ChuFangJXWebViewControllver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E912AA71FF338B2005DA4F2 /* ChuFangJXWebViewControllver.swift */; };
 		0E94F7A41FE0CBA800943C62 /* HPCameraLayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E94F7A31FE0CBA800943C62 /* HPCameraLayerDelegate.swift */; };
 		0E9F96901FC6619300B01F10 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F968F1FC6619300B01F10 /* BaseTabBarController.swift */; };
 		0E9F96921FC6628B00B01F10 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F96911FC6628B00B01F10 /* BaseNavigationController.swift */; };
 		0E9F96991FC6632200B01F10 /* ChuFangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F96981FC6632200B01F10 /* ChuFangViewController.swift */; };
+		0EB207CF1FE3777D008404B6 /* PopularWeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB207CE1FE3777D008404B6 /* PopularWeekTableViewController.swift */; };
+		0EB207D21FE377D5008404B6 /* PopularWeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB207D01FE377D5008404B6 /* PopularWeekTableViewCell.swift */; };
+		0EB207D31FE377D5008404B6 /* PopularWeekTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB207D11FE377D5008404B6 /* PopularWeekTableViewCell.xib */; };
 		0EB933BE1FCCEA39002EF4FB /* HPMainTitleBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB933BD1FCCEA39002EF4FB /* HPMainTitleBarTableViewCell.swift */; };
 		0EB933C01FCCEA61002EF4FB /* HPMainTitleBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB933BF1FCCEA61002EF4FB /* HPMainTitleBarTableViewCell.xib */; };
 		0EB933C31FCCF5CC002EF4FB /* HPPop_eventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB933C11FCCF5CC002EF4FB /* HPPop_eventTableViewCell.swift */; };
@@ -125,6 +132,8 @@
 		0E27C2A51FC67D68002EC87A /* HPMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainViewModel.swift; sourceTree = "<group>"; };
 		0E2888531FD155B000A83FFB /* HPCreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCreateRecipeView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPCreateRecipeView.xib; sourceTree = "<group>"; };
+		0E3639051FE3A8E500994E5A /* PopTitleBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTitleBaseViewController.swift; sourceTree = "<group>"; };
+		0E3639071FE3A9CF00994E5A /* HPMainBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainBaseTableViewController.swift; sourceTree = "<group>"; };
 		0E3E73561FCC0EFB00145693 /* HPMainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableView.swift; sourceTree = "<group>"; };
 		0E3E73581FCC114A00145693 /* HPMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTableViewCell.swift; sourceTree = "<group>"; };
 		0E3E73591FCC114A00145693 /* HPMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainTableViewCell.xib; sourceTree = "<group>"; };
@@ -142,13 +151,18 @@
 		0E7E5DC41FC56E18000F9083 /* DinnerOnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinnerOnlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7E5DC81FC56E18000F9083 /* DinnerOnlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerOnlineUITests.swift; sourceTree = "<group>"; };
 		0E7E5DCA1FC56E18000F9083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E847D781FE3C363002FEF1D /* CircleIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIconView.swift; sourceTree = "<group>"; };
 		0E8797501FE26CCB0082831B /* HPBuyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPBuyListViewController.swift; sourceTree = "<group>"; };
 		0E8797511FE26CCC0082831B /* HPBuyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPBuyListViewController.xib; sourceTree = "<group>"; };
 		0E8797541FE26FEC0082831B /* HPTitleNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTitleNavigationBar.swift; sourceTree = "<group>"; };
+		0E912AA71FF338B2005DA4F2 /* ChuFangJXWebViewControllver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuFangJXWebViewControllver.swift; sourceTree = "<group>"; };
 		0E94F7A31FE0CBA800943C62 /* HPCameraLayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCameraLayerDelegate.swift; sourceTree = "<group>"; };
 		0E9F968F1FC6619300B01F10 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		0E9F96911FC6628B00B01F10 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0E9F96981FC6632200B01F10 /* ChuFangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuFangViewController.swift; sourceTree = "<group>"; };
+		0EB207CE1FE3777D008404B6 /* PopularWeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularWeekTableViewController.swift; sourceTree = "<group>"; };
+		0EB207D01FE377D5008404B6 /* PopularWeekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularWeekTableViewCell.swift; sourceTree = "<group>"; };
+		0EB207D11FE377D5008404B6 /* PopularWeekTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularWeekTableViewCell.xib; sourceTree = "<group>"; };
 		0EB933BD1FCCEA39002EF4FB /* HPMainTitleBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPMainTitleBarTableViewCell.swift; sourceTree = "<group>"; };
 		0EB933BF1FCCEA61002EF4FB /* HPMainTitleBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPMainTitleBarTableViewCell.xib; sourceTree = "<group>"; };
 		0EB933C11FCCF5CC002EF4FB /* HPPop_eventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPPop_eventTableViewCell.swift; sourceTree = "<group>"; };
@@ -306,6 +320,9 @@
 				0E2888551FD1569400A83FFB /* HPCreateRecipeView.xib */,
 				0E94F7A31FE0CBA800943C62 /* HPCameraLayerDelegate.swift */,
 				0E8797541FE26FEC0082831B /* HPTitleNavigationBar.swift */,
+				0EB207D01FE377D5008404B6 /* PopularWeekTableViewCell.swift */,
+				0EB207D11FE377D5008404B6 /* PopularWeekTableViewCell.xib */,
+				0E847D781FE3C363002FEF1D /* CircleIconView.swift */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -483,6 +500,8 @@
 				0E9F96961FC662AE00B01F10 /* 信箱 */,
 				0E9F968F1FC6619300B01F10 /* BaseTabBarController.swift */,
 				0E9F96911FC6628B00B01F10 /* BaseNavigationController.swift */,
+				0E3639051FE3A8E500994E5A /* PopTitleBaseViewController.swift */,
+				0E3639071FE3A9CF00994E5A /* HPMainBaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -538,12 +557,14 @@
 		0E9F96931FC662AE00B01F10 /* 下厨房 */ = {
 			isa = PBXGroup;
 			children = (
+				0EB207CE1FE3777D008404B6 /* PopularWeekTableViewController.swift */,
 				0E9F96981FC6632200B01F10 /* ChuFangViewController.swift */,
 				0E1799FA1FCFA5CE0040374D /* HPMainSearchViewController.swift */,
 				0ED3698C1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift */,
 				0ED3698D1FD13FCB001B5173 /* HPMainCreateRecipeViewController.xib */,
 				0E8797501FE26CCB0082831B /* HPBuyListViewController.swift */,
 				0E8797511FE26CCC0082831B /* HPBuyListViewController.xib */,
+				0E912AA71FF338B2005DA4F2 /* ChuFangJXWebViewControllver.swift */,
 			);
 			path = "下厨房";
 			sourceTree = "<group>";
@@ -814,6 +835,7 @@
 				0E7E5DAE1FC56E18000F9083 /* Main.storyboard in Resources */,
 				0EB933C01FCCEA61002EF4FB /* HPMainTitleBarTableViewCell.xib in Resources */,
 				0E8797531FE26CCC0082831B /* HPBuyListViewController.xib in Resources */,
+				0EB207D31FE377D5008404B6 /* PopularWeekTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF0E1961FCBF3C600146921 /* UIView+WebCacheOperation.m in Sources */,
+				0E3639081FE3A9CF00994E5A /* HPMainBaseTableViewController.swift in Sources */,
 				0EE029851FC6A26200E4B48B /* HPNavTitleModel.swift in Sources */,
 				0E3E73571FCC0EFB00145693 /* HPMainTableView.swift in Sources */,
 				0ED369841FD0ECCB001B5173 /* HPSearchItemCollectionViewCell.swift in Sources */,
@@ -896,6 +919,7 @@
 				0E1799FB1FCFA5CE0040374D /* HPMainSearchViewController.swift in Sources */,
 				0EF0E15F1FCBEB0400146921 /* HPMainBannerCell.swift in Sources */,
 				0EB933BE1FCCEA39002EF4FB /* HPMainTitleBarTableViewCell.swift in Sources */,
+				0E912AA81FF338B2005DA4F2 /* ChuFangJXWebViewControllver.swift in Sources */,
 				0E27C29E1FC66D16002EC87A /* Common.swift in Sources */,
 				0E9F96921FC6628B00B01F10 /* BaseNavigationController.swift in Sources */,
 				0EF0E18E1FCBF3C600146921 /* SDWebImageManager.m in Sources */,
@@ -908,9 +932,11 @@
 				0E1799F91FCF9B220040374D /* AdArrowDownButton.swift in Sources */,
 				0EF0E18F1FCBF3C600146921 /* SDWebImagePrefetcher.m in Sources */,
 				0ED3698E1FD13FCB001B5173 /* HPMainCreateRecipeViewController.swift in Sources */,
+				0EB207CF1FE3777D008404B6 /* PopularWeekTableViewController.swift in Sources */,
 				0EB933C71FCD1293002EF4FB /* HPBannerTableViewCell.swift in Sources */,
 				0EF0E1951FCBF3C600146921 /* UIImageView+WebCache.m in Sources */,
 				0E94F7A41FE0CBA800943C62 /* HPCameraLayerDelegate.swift in Sources */,
+				0E847D791FE3C363002FEF1D /* CircleIconView.swift in Sources */,
 				0E27C2A41FC67896002EC87A /* HPNetWorking.swift in Sources */,
 				0E27C2A61FC67D68002EC87A /* HPMainViewModel.swift in Sources */,
 				0E9F96901FC6619300B01F10 /* BaseTabBarController.swift in Sources */,
@@ -928,6 +954,7 @@
 				0EF0E1891FCBF3C600146921 /* SDImageCache.m in Sources */,
 				0EF0E18C1FCBF3C600146921 /* SDWebImageDownloader.m in Sources */,
 				0E27C29C1FC66AF1002EC87A /* UIScreen(addtion).swift in Sources */,
+				0EB207D21FE377D5008404B6 /* PopularWeekTableViewCell.swift in Sources */,
 				0E7E5DAB1FC56E18000F9083 /* ViewController.swift in Sources */,
 				0E1799F21FCE8ECB0040374D /* HPMainRecommendCollectionViewCell.swift in Sources */,
 				0EF0E1921FCBF3C600146921 /* UIImage+MultiFormat.m in Sources */,
@@ -936,6 +963,7 @@
 				0E8797521FE26CCC0082831B /* HPBuyListViewController.swift in Sources */,
 				0EF0E1871FCBF3C600146921 /* MKAnnotationView+WebCache.m in Sources */,
 				0EF0E18D1FCBF3C600146921 /* SDWebImageDownloaderOperation.m in Sources */,
+				0E3639061FE3A8E500994E5A /* PopTitleBaseViewController.swift in Sources */,
 				0E27C2A21FC6756C002EC87A /* HPTitleButton.swift in Sources */,
 				0EF0E15A1FCBE8E800146921 /* TYCyclePagerTransformLayout.m in Sources */,
 				0E1799FD1FCFB4A80040374D /* UIColor(extension).swift in Sources */,

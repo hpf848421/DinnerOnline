@@ -8,15 +8,13 @@
 
 import UIKit
 
-class HPBuyListViewController: UIViewController {
+class HPBuyListViewController: PopTitleBaseViewController {
     
-    lazy  var navigationBar1 = HPTitleNavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.kWidth(), height: barHeight))
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor=UIColor.white
-        navigationBar1.delegate1=self
-        view.addSubview(navigationBar1)
+        setTitleStr(title: "菜篮子")
         
         
         
@@ -24,10 +22,4 @@ class HPBuyListViewController: UIViewController {
 
 
 }
-extension HPBuyListViewController:HPTitleNavigationBarDelegate{
-    func backClick() {
-            self.navigationController?.popViewController(animated: true)
-    }
-    
-    
-}
+

@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+@objc
+protocol Pop_recipe_ViewDelegate {
+    @objc optional func imageClick(with view:Pop_recipe_View,and data:NSDictionary?,and button:UIButton)
+}
 class Pop_recipe_View: UIView {
 
     @IBOutlet weak var firstLabel: UILabel!
@@ -17,6 +20,19 @@ class Pop_recipe_View: UIView {
     @IBOutlet weak var secondImageView: UIImageView!
     
     var nibview : UIView!
+    
+    var delegate:Pop_recipe_ViewDelegate?
+    
+    @IBAction func firImageClick(_ sender: Any) {
+        delegate?.imageClick?(with: self, and: nil, and: sender as! UIButton)
+        
+    }
+    
+   
+    @IBAction func secondImageClick(_ sender: Any) {
+        delegate?.imageClick?(with: self, and: nil, and: sender as! UIButton)
+        
+    }
     
     override func awakeFromNib() {
       
@@ -31,6 +47,7 @@ class Pop_recipe_View: UIView {
         let name=NSStringFromClass(className).components(separatedBy: ".").last
         let nib=UINib(nibName: name!, bundle: bundle)
         nibview=nib.instantiate(withOwner: self, options:nil).first as! UIView
+        nibview.frame=self.bounds
         addSubview(nibview)
     }
     required init?(coder aDecoder: NSCoder) {
@@ -53,8 +70,8 @@ class Pop_recipe_View: UIView {
       
     }
     override func layoutSubviews() {
-//        super.layoutSubviews()
+        super.layoutSubviews()
         nibview?.frame=self.bounds
-        
+
     }
 }

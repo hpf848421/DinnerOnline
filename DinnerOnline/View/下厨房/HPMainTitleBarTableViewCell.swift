@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+protocol  HPMainTitleBarTableViewCellDelegate{
+    func titleBarbtnClick(By tag:NSInteger,and model:HPNavTitleModel?)
+    
+}
 class HPMainTitleBarTableViewCell: UITableViewCell {
 
     @IBOutlet weak var firstButton: HPTitleButton!
@@ -21,7 +24,10 @@ class HPMainTitleBarTableViewCell: UITableViewCell {
     
     @IBOutlet weak var fourthButton: HPTitleButton!
     
+    var delegate : HPMainTitleBarTableViewCellDelegate?
+    
     private var buttonArray=[HPTitleButton]()
+    
     var celldata : [HPNavTitleModel]?{
         didSet{
                 guard  let celldata=celldata else {
@@ -54,5 +60,11 @@ class HPMainTitleBarTableViewCell: UITableViewCell {
     }
 
     
-
+    @IBAction func btnClick(_ sender: HPTitleButton) {
+        
+        delegate?.titleBarbtnClick(By: sender.tag, and: celldata?[sender.tag])
+        
+        
+    }
+    
 }

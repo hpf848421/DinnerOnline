@@ -83,17 +83,19 @@ extension ChuFangViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
           let cell1=tableView.dequeueReusableCell(withIdentifier:HPMainTitleBarTableViewCellId) as! HPMainTitleBarTableViewCell
+            cell1.delegate=self
            cell1.celldata=hpMainViewModel.titleArray
             return cell1
         }
         if indexPath.row == 1{
             let cell1=tableView.dequeueReusableCell(withIdentifier: HPPop_eventTableViewCellId) as! HPPop_eventTableViewCell
+            cell1.delegate=self
             cell1.setFirstLabel(with: "本周\n流行菜谱", second: "你的好友\n在分享美食", first: hpMainViewModel.pop_recipe_picurl ,second: nil)
             return cell1
         }
         if indexPath.row == 2{
             let cell1=tableView.dequeueReusableCell(withIdentifier: HPBannerTableViewCellId) as! HPBannerTableViewCell
-            cell1.pageControl.numberOfPages=self.pop_event_Count
+//            cell1.pageControl.numberOfPages=self.pop_event_Count
             cell1.celldatas=hpMainViewModel.bannerArray
              cell1.pageControl.frame = CGRect(x: 0, y: cell1.pagerView.frame.height - 26.0, width: cell1.pagerView.frame.size.width, height: 26)
             return cell1
@@ -149,4 +151,22 @@ extension ChuFangViewController:HPNavigationBarDelegate{
         navigationController?.pushViewController(buyListVC, animated: true)
         
     }
+}
+
+// MARK: - 流行点击
+extension ChuFangViewController:HPPop_eventTableViewCellDelegate{
+    
+    func imageClick(with view: Pop_recipe_View, and data: NSDictionary?, and button: UIButton, cell: HPPop_eventTableViewCell) {
+            let popluarVC=PopularWeekTableViewController()
+        navigationController?.pushViewController(popluarVC, animated: true)
+    }
+}
+extension ChuFangViewController : HPMainTitleBarTableViewCellDelegate{
+    
+    func titleBarbtnClick(By tag: NSInteger, and model: HPNavTitleModel?) {
+        let jxWebVC=ChuFangJXWebViewControllver()
+        jxWebVC.webDatas=model
+        navigationController?.pushViewController(jxWebVC, animated: true)
+    }
+    
 }

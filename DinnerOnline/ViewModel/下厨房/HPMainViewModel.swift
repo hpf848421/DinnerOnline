@@ -17,6 +17,8 @@ class HPMainViewModel: NSObject {
     
     var explore_tabsArray:NSArray?
     
+    var popularArray:NSArray?
+    
      func loadMainDatas(_ complete:@escaping (_ success:Bool,_ datas:[HPNavTitleModel]?,_ pop_recipe_picurl:String?,_ pop_events:NSDictionary?)->()) {
         
         HPNetWorking.shared.get("https://api.xiachufang.com/v2/init_page_v5.json?_ts=1511399886.463117&api_key=07397197043fafe11ce5c65c10febf84&api_sign=ad210a57921a12183c176e64350e62d5&location_code=156350100000000&nonce=00B02E0A-73F4-4B73-9D25-5CFBD963BBE4&origin=iphone&sk=&timezone=Asia/Shanghai&version=6.3.9&webp=1", parameters: [], success: { (datatask, json) in
@@ -72,4 +74,23 @@ class HPMainViewModel: NSObject {
 
     }
     
+    func loadPopularDatas(_ complete:@escaping (_ success:Bool,_ data:NSDictionary?)->()) {
+        
+        HPNetWorking.shared.get("https://api.xiachufang.com/v2/recipes/popular_v3.json?_ts=1513325720.814201&api_key=07397197043fafe11ce5c65c10febf84&api_sign=dbd2abb230b001e6161d0e6268374d6b&limit=20&location_code=156350100000000&nonce=07A72559-4259-425F-BA38-0FC2B0602154&offset=0&origin=iphone&sk=&version=6.4.0&webp=1", parameters: [], success: { (datas, json) in
+            
+            let jsonDic = json as? [String:Any]
+            guard let jsonDic1 = jsonDic,
+                let contentDic = jsonDic1["content"] as? NSDictionary,
+                let explore_tabsArray = contentDic["recipes"] as? NSArray
+                else {
+                    complete(false,nil)
+                    return
+                }
+            self.popularArray=explore_tabsArray
+                complete(true,contentDic)
+        }) { (datas, error) in
+                complete(false,nil)
+        }
+        
+    }
 }
